@@ -10,5 +10,5 @@ Prime::Styles.define :tasks do
     top: 5,
     left: 30,
     width: 260,
-    font: proc { Prime::Config.font.name.uifont(14) }
+    font: :app_base.uifont(14)
 end

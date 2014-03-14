@@ -4,7 +4,7 @@ Prime::Config.configure do |config|
     colors.dark = 0x333333
   end
 
-  config.font.name = "Ubuntu"
+  config.fonts.base = "Ubuntu"
 
   config.api do |api|
     api.base = "http://example.com"

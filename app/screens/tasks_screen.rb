@@ -1,4 +1,4 @@
-class HomeScreen < ApplicationScreen
+class TasksScreen < ApplicationScreen
   title 'Home'
 
   def render

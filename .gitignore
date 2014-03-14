@@ -5,6 +5,4 @@ tags
 resources/*.nib
 resources/*.momd
 resources/*.storyboardc
-vendor/Pods/build-iPhoneOS/
-vendor/Pods/build-iPhoneSimulator/
-vendor/Pods/.build
+vendor
