@@ -1,14 +1,31 @@
 class TasksFormSection < Prime::FormSection
-  field :title, label: { text: '' }, input: { placeholder: 'Task title' }
-  field :login, button: { title: 'Create' }, type: :submit, action: :on_submit
+  field :title,
+    label: { text: 'Title' },
+    input: {
+      text: proc { model.title },
+      placeholder: "Enter title here"
+    }
+
+  field :delete, type: :submit,
+    button: {
+      title: "Delete",
+      background_color: :red
+    },
+    action: :on_delete,
+    if: proc { model.persisted? }
+
+  field :submit, type: :submit,
+    button: { title: "Save" },
+    action: :on_submit
+
+  def on_delete
+    model.delete
+    screen.close_screen(to_root: true)
+  end
 
   def on_submit
-    title = view("title:input").text
-    if title.blank?
-      table_view.shake and return
-    end
-    task = Task.new(title: title)
-    task.save
-    screen.back
+    model.assign_attributes(field_values)
+    model.save
+    screen.close_screen
   end
 end
