@@ -6,6 +6,6 @@ class TasksIndexCellSection < Prime::Section
 
   def finish
     model.delete
-    table.delete_cell_sections(self)
+    collection_section.delete_cell_sections(self)
   end
 end

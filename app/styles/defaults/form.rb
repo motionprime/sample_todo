@@ -64,7 +64,6 @@ MotionPrime::Styles.define :base_form do
       placeholder_font_size: 16,
       background_color: :white,
       text_color: :app_base,
-      padding_top: 6,
       left: 15,
       right: 15,
       top: 25,
@@ -85,7 +84,6 @@ MotionPrime::Styles.define :base_form do
       placeholder_font_size: 16,
       background_color: :white,
       text_color: :app_base,
-      padding_top: 6,
       left: 15,
       right: 15,
       top: 25,
@@ -147,7 +145,7 @@ MotionPrime::Styles.define :base_form do
   # affected: input of date field
   style :date_field_input,
     height: 150,
-    top: 25, 
+    top: 25,
     left: 15,
     right: 15
 

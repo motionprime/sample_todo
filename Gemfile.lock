@@ -50,7 +50,7 @@ GEM
     motion-cocoapods (1.4.2)
       cocoapods (>= 0.32.1)
     motion-map (0.0.4)
-    motion-prime (0.9.9)
+    motion-prime (0.9.9.1)
       activesupport
       afmotion (~> 2.1.0)
       bubble-wrap (~> 1.6.0)
@@ -78,13 +78,13 @@ GEM
       cocoapods
       motion-cocoapods
       motion-require
-    prime_sliding_action (0.2.1)
+    prime_sliding_action (0.3.0)
       cocoapods
       motion-cocoapods
-      motion-prime (>= 0.9.7)
+      motion-prime (>= 0.9.9.1)
       motion-require
     rm-digest (0.0.2)
-    sugarcube (1.6.1)
+    sugarcube (1.6.2)
     thor (0.19.1)
     xcodeproj (0.17.0)
       activesupport (~> 3.0)
@@ -95,7 +95,7 @@ PLATFORMS
 
 DEPENDENCIES
   motion-cocoapods (~> 1.4.1)
-  motion-prime (= 0.9.9)
+  motion-prime (= 0.9.9.1)
   prime_awesome (~> 0.0.1)
   prime_reside_menu (~> 0.1.4)
-  prime_sliding_action (= 0.2.1)
+  prime_sliding_action (= 0.3.0)
